@@ -23,7 +23,12 @@ int main(void) {
 		printf("Invalid input. Enter value for radius >0: ");
 		scanf("%f", &r);//get new input
 	}
-	area = 2 * r * PI;	//calculates area
-	printf("Circumference of the circle is: %.2f\n\n", area);	//displays area
+	area = r * r * PI;	//calculates area
+	printf("Area of the circle is: %.2f\n", area);	//displays area
+	
+	printf("this is a test comment\n");
+	float circumference;
+	circumference = 2 * r * PI;
+	printf("Circumference of the circle is: %.2f\n\n", circumference);
 	return EXIT_SUCCESS;
 }
